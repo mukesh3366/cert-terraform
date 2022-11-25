@@ -1,10 +1,11 @@
-
+/*
 resource "aws_iam_user" "lb" {
   path  = "/system/" 
   for_each = toset(["user-1", "user-2", "user-3"])  
   name = each.value 
 
 }
+*/ 
 
 
 resource "aws_iam_user" "lb" {
